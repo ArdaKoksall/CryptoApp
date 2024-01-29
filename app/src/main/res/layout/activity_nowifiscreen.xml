@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".nowifiscreen">
+
+  <Button
+      android:id="@+id/tryagain"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="158dp"
+      android:layout_marginTop="193dp"
+      android:layout_marginEnd="159dp"
+      android:layout_marginBottom="276dp"
+      android:text="Try Again"
+      app:backgroundTint="@null"
+      android:background="@drawable/button_background"
+      android:textColor="@color/orange"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.476"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="193dp"
+      android:layout_height="208dp"
+      android:layout_marginStart="109dp"
+      android:layout_marginTop="144dp"
+      app:backgroundTint="@null"
+      android:background="@drawable/button_background"
+      android:layout_marginEnd="109dp"
+      android:layout_marginBottom="2dp"
+      app:layout_constraintBottom_toTopOf="@+id/textView"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/nowifi" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="211dp"
+      android:layout_height="33dp"
+      android:layout_marginStart="174dp"
+      android:layout_marginTop="12dp"
+      android:layout_marginEnd="179dp"
+      android:layout_marginBottom="20dp"
+      android:text="No internet connection."
+      android:textColor="@color/white"
+      android:textSize="20dp"
+      app:layout_constraintBottom_toTopOf="@+id/tryagain"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.477"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

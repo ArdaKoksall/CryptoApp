@@ -1,0 +1,66 @@
+<!-- res/layout/dialog_sell_options.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="16dp">
+
+    <!-- Quantity and Money Buttons -->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/quantityRadioButtonSell"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:text="Quantity" />
+
+        <RadioButton
+            android:id="@+id/moneyRadioButtonSell"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:text="Money" />
+
+    </RadioGroup>
+
+    <!-- EditText for Quantity or Money -->
+    <EditText
+        android:id="@+id/amountEditTextSell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Quantity or Money"
+        android:background="@drawable/button_background"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/white"
+        android:inputType="numberDecimal" />
+
+    <!-- Buy Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sellButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:background="@drawable/button_background"
+        android:text="Sell" />
+
+    <!-- Sell All Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sellAllButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:background="@drawable/button_background"
+        android:text="Sell All" />
+
+</LinearLayout>

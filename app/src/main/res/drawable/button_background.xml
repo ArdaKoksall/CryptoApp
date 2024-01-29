@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/button_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background shape (transparent) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <!-- Orange border -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <corners android:radius="8dp" /> <!-- Adjust the radius for your desired corner roundness -->
+            <stroke
+                android:width="2dp"
+            android:color="#FFA500" /> <!-- Border color (orange in this case) -->
+        </shape>
+    </item>
+</layer-list>
+

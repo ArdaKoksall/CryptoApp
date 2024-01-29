@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#000000"
+    tools:context=".createaccountactivity">
+
+    <!-- Logo -->
+
+    <!-- Full Name -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="4dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/button_background"
+        android:contentDescription="@string/todobbb"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <EditText
+        android:id="@+id/fullNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:autofillHints=""
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center_vertical"
+        android:hint="@string/full_namejgv"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- Control TextView for Full Name -->
+    <TextView
+        android:id="@+id/fullNameControlTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dsa"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullNameEditText"
+        android:layout_marginTop="0dp"/>
+
+    <!-- Cross and Tick for Full Name -->
+    <ImageView
+        android:id="@+id/fullNameTick"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_tick"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fullNameEditText"
+        android:contentDescription="@string/ads" />
+
+    <ImageView
+        android:id="@+id/fullNameCross"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_cross"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fullNameEditText"
+        android:contentDescription="@string/bvbb" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center_vertical"
+        android:hint="@string/emailac"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullNameEditText"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- Control TextView for Email -->
+    <TextView
+        android:id="@+id/emailControlTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ss"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText"
+        android:layout_marginTop="0dp"/>
+
+    <!-- Cross and Tick for Email -->
+    <ImageView
+        android:id="@+id/emailTick"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_tick"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/emailEditText"
+        android:contentDescription="@string/todomjn" />
+
+    <ImageView
+        android:id="@+id/emailCross"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_cross"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/emailEditText"
+        android:contentDescription="@string/ssd" />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginEnd="25dp"
+        android:gravity="center_vertical"
+        android:hint="@string/passwordbb"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- Control TextView for Password -->
+    <TextView
+        android:id="@+id/passwordControlTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/errorbb"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+        android:layout_marginTop="0dp"/>
+
+    <!-- Cross and Tick for Password -->
+    <ImageView
+        android:id="@+id/passwordTick"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_tick"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/passwordEditText"
+        android:contentDescription="@string/todobbbb" />
+
+    <ImageView
+        android:id="@+id/passwordCross"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_cross"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/passwordEditText"
+        android:contentDescription="@string/todobb" />
+
+    <!-- Confirm Password -->
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center_vertical"
+        android:hint="@string/confirm_password2"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- Control TextView for Confirm Password -->
+    <TextView
+        android:id="@+id/confirmPasswordControlTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordEditText"
+        android:layout_marginTop="0dp"/>
+
+    <!-- Cross and Tick for Confirm Password -->
+    <ImageView
+        android:id="@+id/confirmPasswordTick"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_tick"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/confirmPasswordEditText"
+        android:contentDescription="@string/todoss" />
+
+    <ImageView
+        android:id="@+id/confirmPasswordCross"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_cross"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/confirmPasswordEditText"
+        android:contentDescription="@string/todo2" />
+
+
+    <!-- Signup Button -->
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@null"
+        android:background="@drawable/button_background"
+        android:text="@string/bb"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordEditText"
+        tools:ignore="VisualLintButtonSize" />
+
+    <!-- Terms and Conditions -->
+    <TextView
+        android:id="@+id/termsAndConditionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/by_signing_up_you_agree_to_our_terms_and_conditions"
+        android:textColor="#CCCCCC"
+
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpButton"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

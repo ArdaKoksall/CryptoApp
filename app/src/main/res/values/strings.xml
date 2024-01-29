@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">project1</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password">Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="todo">TODO</string>
+    <string name="by_signing_up_you_agree_to_our_terms_amp_conditions"><![CDATA[By signing up, you agree to our Terms & Conditions.]]></string>
+    <string name="error">error</string>
+    <string name="todo2">TODO</string>
+    <string name="confirm_password2">Confirm Password</string>
+    <string name="todoss">TODO</string>
+    <string name="ss">error</string>
+    <string name="ssd">TODO</string>
+    <string name="emailac">Email</string>
+    <string name="dsa">error</string>
+    <string name="full_namejgv">Full Name</string>
+    <string name="todomjn">TODO</string>
+    <string name="bvbb">TODO</string>
+    <string name="errorbb">error</string>
+    <string name="todobb">TODO</string>
+    <string name="bb">Sign Up</string>
+    <string name="by_signing_up_you_agree_to_our_terms_and_conditions">By signing up, you agree to our Terms and Conditions</string>
+    <string name="passwordbb">Password</string>
+    <string name="todobbbb">TODO</string>
+    <string name="todobbb">TODO</string>
+    <string name="ads">TODO</string>
+    <string name="todorft">TODO</string>
+    <string name="tododsadsa">TODO</string>
+    <string name="crypto_image_description">symbol</string>
+    <string name="m480_480q414_480_367_433q320_386_320_320q320_254_367_207q414_160_480_160q546_160_593_207q640_254_640_320q640_386_593_433q546_480_480_480zm160_800l160_688q160_654_177_5_625_5q195_597_224_582q286_551_350_535_5q414_520_480_520q546_520_610_535_5q674_551_736_582q765_597_782_5_625_5q800_654_800_688l800_800l160_800zm240_720l720_720l720_688q720_677_714_5_668q709_659_700_654q646_627_591_613_5q536_600_480_600q424_600_369_613_5q314_627_260_654q251_659_245_5_668q240_677_240_688l240_720zm480_400q513_400_536_5_376_5q560_353_560_320q560_287_536_5_263_5q513_240_480_240q447_240_423_5_263_5q400_287_400_320q400_353_423_5_376_5q447_400_480_400zm480_320q480_320_480_320q480_320_480_320q480_320_480_320q480_320_480_320q480_320_480_320q480_320_480_320q480_320_480_320q480_320_480_320zm480_720l480_720q480_720_480_720q480_720_480_720q480_720_480_720q480_720_480_720q480_720_480_720q480_720_480_720q480_720_480_720q480_720_480_720l480_720l480_720z">M480,480Q414,480 367,433Q320,386 320,320Q320,254 367,207Q414,160 480,160Q546,160 593,207Q640,254 640,320Q640,386 593,433Q546,480 480,480ZM160,800L160,688Q160,654 177.5,625.5Q195,597 224,582Q286,551 350,535.5Q414,520 480,520Q546,520 610,535.5Q674,551 736,582Q765,597 782.5,625.5Q800,654 800,688L800,800L160,800ZM240,720L720,720L720,688Q720,677 714.5,668Q709,659 700,654Q646,627 591,613.5Q536,600 480,600Q424,600 369,613.5Q314,627 260,654Q251,659 245.5,668Q240,677 240,688L240,720ZM480,400Q513,400 536.5,376.5Q560,353 560,320Q560,287 536.5,263.5Q513,240 480,240Q447,240 423.5,263.5Q400,287 400,320Q400,353 423.5,376.5Q447,400 480,400ZM480,320Q480,320 480,320Q480,320 480,320Q480,320 480,320Q480,320 480,320Q480,320 480,320Q480,320 480,320Q480,320 480,320Q480,320 480,320ZM480,720L480,720Q480,720 480,720Q480,720 480,720Q480,720 480,720Q480,720 480,720Q480,720 480,720Q480,720 480,720Q480,720 480,720Q480,720 480,720L480,720L480,720Z</string>
+</resources>

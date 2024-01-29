@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "220805311301",
+    "project_id": "coinmarket-28dff",
+    "storage_bucket": "coinmarket-28dff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220805311301:android:8f7e95c0b06a7650c26c2c",
+        "android_client_info": {
+          "package_name": "com.example.project1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220805311301-81o9a62b3e4dm9rp1001j2b5sobp2ies.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNUpygn5Hh_1yrmrK5qPD3jxiqIXPtiO0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220805311301-81o9a62b3e4dm9rp1001j2b5sobp2ies.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

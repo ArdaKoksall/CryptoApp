@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"> <!-- Set background color to black -->
+
+    <!-- Logo in the Top Left Corner -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/todorft" />
+
+    <!-- Search Area -->
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Cryptos"
+        android:background="#9999"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_toEndOf="@id/logoImageView"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignTop="@id/logoImageView"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- Wallet and Profile Buttons -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <!-- Example for one of the buttons, repeat for other buttons -->
+        <ImageButton
+            android:id="@+id/walletButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wallet"
+            android:layout_weight="1"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_background" /> <!-- Set the custom button background -->
+
+
+        <ImageButton
+            android:id="@+id/mainPageButton"
+            android:layout_width="0dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:backgroundTint="@null"
+            android:src="@drawable/cryptomarketwhite"
+            android:background="@drawable/button_background" />
+
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/account"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_background"
+            style="?android:attr/buttonBarButtonStyle" /> <!-- Set background tint to orange -->
+
+    </LinearLayout>
+
+    <!-- Crypto List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cryptoListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/buttonLayout"
+    android:layout_below="@id/logoImageView"
+    android:padding="8dp"
+    android:scrollbars="vertical" />
+
+</RelativeLayout>

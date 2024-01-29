@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Logo in the Top Left Corner -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/todorft" />
+
+    <!-- Profile Title -->
+
+    <!-- Wallet and Profile Buttons -->
+
+    <TextView
+        android:id="@+id/profileTitle"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@id/logoImageView"
+        android:text="Profile"
+        android:textColor="@color/orange"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/walletButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wallet"
+            android:layout_weight="1"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_background" />
+
+        <ImageButton
+            android:id="@+id/mainPageButton"
+            android:layout_width="0dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:backgroundTint="@null"
+            android:src="@drawable/cryptomarket"
+            android:background="@drawable/button_background" />
+
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/accountwhite"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_background"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    </LinearLayout>
+
+    <!-- Profile Information Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_above="@id/buttonLayout"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/account"
+            android:src="@drawable/button_background"
+            android:contentDescription="Profile Picture" />
+
+        <!-- User Name -->
+        <TextView
+            android:id="@+id/useremailtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background"
+            android:text="John Doe"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <!-- Other Profile Information -->
+        <!-- Add more TextViews or ImageViews for other profile information -->
+
+        <!-- User ID EditText -->
+        <EditText
+            android:id="@+id/userIdEditText"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background"
+            android:hint="User mail"
+            android:textColorHint="@color/light_gray"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/amountEditText"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background"
+            android:hint="Amount $"
+            android:inputType="number"
+            android:textColorHint="@color/light_gray"
+            android:textColor="@color/white" />
+
+        <!-- Transfer Button -->
+        <Button
+            android:id="@+id/transferButton"
+            android:layout_width="wrap_content"
+            app:backgroundTint="@null"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background"
+            android:text="Transfer"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            app:backgroundTint="@null"
+            android:backgroundTint="@color/orange"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp" />
+
+        <!-- Transfer Button -->
+
+    </LinearLayout>
+
+</RelativeLayout>

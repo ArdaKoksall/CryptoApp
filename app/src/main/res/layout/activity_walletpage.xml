@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Logo in the Top Left Corner -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/todorft" />
+
+    <!-- Profile Title -->
+
+    <!-- Wallet and Profile Buttons -->
+
+    <TextView
+        android:id="@+id/profileTitle"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@id/logoImageView"
+        android:text="Wallet"
+        android:textColor="@color/orange"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/walletButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/walletwhite"
+            android:layout_weight="1"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_background" />
+
+        <ImageButton
+            android:id="@+id/mainPageButton"
+            android:layout_width="0dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:backgroundTint="@null"
+            android:src="@drawable/cryptomarket"
+            android:background="@drawable/button_background" />
+
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/account"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_background"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_above="@id/buttonLayout"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- RecyclerView for Wallet -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/walletRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background" />
+
+    </LinearLayout>
+
+</RelativeLayout>

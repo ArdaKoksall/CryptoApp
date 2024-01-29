@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Crypto Info Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cryptoInfoCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/black"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/button_background"
+        android:padding="16dp">
+
+        <!-- Crypto Image -->
+        <ImageView
+            android:id="@+id/cryptoImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_background"
+            android:contentDescription="Crypto Image" />
+
+        <!-- Crypto Name and Symbol -->
+        <TextView
+            android:id="@+id/cryptoNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bitcoin"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/cryptoSymbolTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BTC"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+        android:layout_gravity="center_horizontal" />
+
+        <!-- Crypto Price -->
+        <TextView
+            android:id="@+id/cryptoPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: $50,000"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Price Change and High/Low -->
+        <TextView
+            android:id="@+id/cryptoPriceChangeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price Change (24h): +5%"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/cryptoHighLowTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High: $55,000 | Low: $45,000"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+    <!-- Buttons (H, D, W, M) -->
+    <LinearLayout
+        android:id="@+id/buttonLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/cryptoInfoCard"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/hourButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="H"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_background"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/dayButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:backgroundTint="@null"
+            android:text="D"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/weekButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@null"
+            android:layout_weight="1"
+            android:text="W"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/monthButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@null"
+            android:layout_weight="1"
+            android:text="M"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"/>
+    </LinearLayout>
+
+    <!-- Crypto Chart ImageView -->
+<WebView
+android:id="@+id/webchart"
+android:layout_width="match_parent"
+android:layout_height="300dp"
+android:layout_below="@id/buttonLayout2"
+    android:background="@drawable/button_background"
+android:layout_marginTop="16dp"
+android:scaleType="centerCrop" />
+
+    <!-- Buy and Sell Buttons -->
+<LinearLayout
+android:id="@+id/buttonLayout"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_below="@id/webchart"
+android:layout_marginTop="16dp"
+android:gravity="center">
+
+<Button
+    android:id="@+id/buyButton"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="Buy"
+    android:textColor="@color/green"
+android:layout_marginEnd="8dp"
+    app:backgroundTint="@null"
+    android:background="@drawable/button_background"
+    style="?android:attr/buttonBarButtonStyle"
+    tools:ignore="VisualLintButtonSize" />
+
+<Button
+    android:id="@+id/sellButton"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="Sell"
+    android:textColor="@color/red"
+    app:backgroundTint="@null"
+    android:background="@drawable/button_background"
+    android:layout_marginStart="8dp"
+    style="?android:attr/buttonBarButtonStyle"
+    tools:ignore="VisualLintButtonSize" />
+
+</LinearLayout>
+
+
+    </RelativeLayout>
