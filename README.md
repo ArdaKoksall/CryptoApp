@@ -12,4 +12,4 @@ User Authentication: Integrates Firebase Authentication for secure user login/lo
 
 Money Transfer Feature: Enables users to transfer funds between user wallets within the app.
 
-AD YOUR FIREBASE URL TO CODE.
+ADD YOUR FIREBASE URL TO CODE.
